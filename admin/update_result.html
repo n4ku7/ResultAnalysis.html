@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Result</title>
+</head>
+<body>
+    <h1 align="center" style="border:2px solid;">Add Student Results</h1>
+    <center>
+        <form action="add_result_action.html" method="post">
+            <table border="1" align="center" style="width: 50%; text-align: center; border:2px solid;">
+                <tr>
+                    <th>Student ID</th>
+                    <td><input type="text" name="student_id" required></td>
+                </tr>
+                <tr>
+                    <th>Course Name</th>
+                    <td><input type="text" name="course_name" required></td>
+                </tr>
+                <tr>
+                    <th>Marks Obtained</th>
+                    <td><input type="number" name="marks_obtained" required></td>
+                </tr>
+                <tr>
+                    <th>Total Marks</th>
+                    <td><input type="number" name="total_marks" required></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Add Result">
+        </form>
+</body>
+</html>
