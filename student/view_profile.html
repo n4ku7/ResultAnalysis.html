@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <link rel="stylesheet" href="/CSS/profile.css">
-</head>
-<body>
-    <center>
-        <h1 align="center" style="border:2px solid;">Student Profile</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Student Profile</title>
+        <link rel="stylesheet" href="/CSS/profile.css" />
+    </head>
+    <body>
+        <h1>Student Profile</h1>
         <div class="card">
-            <table class ="profile-table">
+            <table style="text-align: left;" class="profile-table">
                 <tr>
-                    <td><img src="student_media/studentProfile.jpg.jpg" alt="Profile picture" height="120px" width="120px"><br><a href="student_index.html">Home</a></td>
-                    <td>Welcome to the student profile page Nakul.<br>Check your progress and see any important announcements on this page.</td>
-                </tr>
-            </table>
-            <table text-align="left">
-                <tr>
-                    <td>
-                        <ul class="list-style">
+                    <td style="display: flex; flex-direction: column; align-items: center;">
+                        <img src="student_media/studentProfile.jpg.jpg" alt="Profile picture" height="120px" width="120px">
+                        <br>
+                        <ul class="list-style" style="margin: 0; padding: 0;">
                             <li>
-                                <a href="view_course.html">View My Courses</a>
-                            </li>
-                            <li>
-                                <a href="view_result.html">View My Results</a>
-                            </li>
-                            <li>
-                                <a href="view_report.html">View My Report</a>
+                                <a href="/index.html">Logout</a>
                             </li>
                         </ul>
                     </td>
+                    <td>
+                        Welcome to your Profile Dashboard.<br/>
+                        Below is the information we have of you.
+                    </td>
                 </tr>
             </table>
-            <hr>
+
+            <ul class="list-style">
+                <li>My Courses</li>
+                <li>Grades</li>
+                <li>Request Transcript</li>
+            </ul>
+
+            <hr />
             <h2>Student Details</h2>
-            <table border="1" align="center" style="width: 100%; text-align: center; border:2px solid;">
+            <table border="1">
                 <tr>
                     <th>Student ID</th>
                     <th>Name</th>
@@ -48,7 +48,7 @@
                 </tr>
             </table>
         </div>
-        <table text-align="left">
+        <table text-align="left" class="list-style">
                 <tr>
                     <td>
                         <ul class="list-style">
@@ -56,12 +56,11 @@
                                 <a href="student_index.html">Back</a>
                             </li>
                             <li>
-                                <a href="/index.html">Logout</a>
+                                <a href="/student/student_index.html">Home</a>
                             </li>
                         </ul>
                     </td>
                 </tr>
             </table>
-    </center>
-</body>
+    </body>
 </html>
