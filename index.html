@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1 align="center" style="border:2px solid #F39F5A;">Welcome</h1>
-    <table border="1" align="center" style="width: auto; text-align: center; border-color: #F39F5A;">
-        <tr>
-            <td><a href = "admin/admin_index.html"><img src = "public_media/admin_logo.jpg" alt = "Admin Logo" style="width: 100px; height: auto;"><br>Admin Login</a></td>
-            <td><a href="faculty/faculty_index.html"><img src = "public_media/faculty_logo.jpg" alt = "User Logo" style="width: 100px; height: auto;"><br>Faculty Login</a></td>
-            <td><a href="student/student_index.html"><img src = "public_media/student_logo.jpg" alt = "Student Logo" style="width: 100px; height: auto;"><br>Student Login</a></td>
-        </tr>
-    </table>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University Portal</title>
+        <link rel="stylesheet" href="/CSS/mainindex.css">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to KL University</h1>
+            <p class="subtitle">Your gateway to the academic management system</p>
+        </header>
+        <main class="login-options">
+            <div class="login-card">
+                <a href="admin/admin_index.html">
+                    <img src="public_media/admin_logo.jpg" alt="Admin Logo">
+                    <span>Admin Login</span>
+                </a>
+            </div>
+            <div class="login-card">
+                <a href="faculty/faculty_index.html">
+                    <img src="public_media/faculty_logo.jpg" alt="Faculty Logo">
+                    <span>Faculty Login</span>
+                </a>
+            </div>
+            <div class="login-card">
+                <a href="student/student_index.html">
+                    <img src="public_media/student_logo.jpg" alt="Student Logo">
+                    <span>Student Login</span>
+                </a>
+            </div>
+        </main>
+    </body>
 </html>

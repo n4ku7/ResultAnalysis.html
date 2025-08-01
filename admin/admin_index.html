@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Index</title>
-    <style>
-            table, th, td {
-                border: 1px solid black;
-                text-align: center;
-                border-color: #F39F5A;
-            }
-            table {
-                margin-left: auto;
-                margin-right: auto;
-            }
-    </style>
-</head>
-<body>
-    <h1 align="center" style="border:2px solid #F39F5A;">Welcome to Admin Portal</h1>
-    <table border="1" align="center" style="width: auto; text-align: center; border-color: #F39F5A;">
-        <tr>
-            <td><a href="course_mgmt.html"><img src="admin_media/CourseMgmt.jpg" alt = "Course Management" style="width: 100px; height: auto;"><br>Course Management</a></td>
-            <td><a href="user_mgmt.html"><img src="admin_media/StdMgmt.jpg" alt = "User Management" style="width: 100px; height: auto;"><br>User Management</a></td>
-            <td><a href="profile.html"><img src="admin_media/profile.jpg" alt = "Profile" style="width: 100px; height: auto;"><br>Profile</a></td>
-        </tr>
-        <tr>
-            <td><a href="course_map_faculty.html"><img src="admin_media/CMF.jpg" alt = "Course mapped Faculty" style="width: 100px; height: auto;"><br>Course mapped Faculty</a></td>
-            <td><a href="course_map_student.html"><img src="admin_media/CMS.jpg" alt = "Course mapped Student" style="width: 100px; height: auto;"><br>Course mapped Student</a></td>
-            <td><a href="report.html"><img src="admin_media/report.jpg" alt = "Report" style="width: 100px; height: auto;"><br>Report</a></td>
-        </tr>
-        <tr>
-            <td colspan="3"><a href="result.html"><img src="admin_media/result.jpg" alt = "Result" style="width: 100px; height: auto;"><br>Result</a></td>
-        </tr>
-    </table>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Portal</title>
+        <link rel="stylesheet" href="/CSS/index.css">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Admin Portal</h1>
+        </header>
+        <main class="grid">
+            <div class="card">
+                <a href="profile.html">
+                    <img src="admin_media/profile.jpg" alt="Profile">
+                    <span>Profile</span>
+                </a>
+            </div>
+            <div class="card">
+                <a href="user_mgmt.html">
+                    <img src="admin_media/StdMgmt.jpg" alt="User Management">
+                    <span>User Management</span>
+                </a>
+            </div>
+            <div class="card">
+                <a href="course_mgmt.html">
+                    <img src="admin_media/CourseMgmt.jpg" alt="Course Management">
+                    <span>Course Management</span>
+                </a>
+            </div>
+            <div class="card">
+                <a href="course_map_faculty.html">
+                    <img src="admin_media/CMF.jpg" alt="Course Mapped Faculty">
+                    <span>Course Mapped Faculty</span>
+                </a>
+            </div>
+            <div class="card">
+                <a href="course_map_student.html">
+                    <img src="admin_media/CMS.jpg" alt="Course Mapped Student">
+                    <span>Course Mapped Student</span>
+                </a>
+            </div>
+            <div class="card">
+                <a href="report.html">
+                    <img src="admin_media/report.jpg" alt="Report">
+                    <span>Report</span>
+                </a>
+            </div>
+            <div class="card full-width">
+                <a href="result.html">
+                    <img src="admin_media/result.jpg" alt="Result">
+                    <span>Result</span>
+                </a>
+            </div>
+        </main>
+        <table text-align="left" class="list-style">
+                <tr>
+                    <td>
+                        <ul class="list-style">
+                            <li>
+                                <a href="/index.html">Back</a>
+                            </li>
+                            <li>
+                                <a href="/admin/admin_index.html">Home</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+        </table>
+    </body>
 </html>

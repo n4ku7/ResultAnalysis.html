@@ -101,7 +101,7 @@ table[border] {
     margin-top: 20px;
 }
 
-table[border] th, 
+table[border] th,
 table[border] td {
     border: 2px solid #eae4d3;
     padding: 10px;
