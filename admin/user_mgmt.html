@@ -3,9 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/UserMgmt.css">
     <title>User Management</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>User Management</h1>
+        <form>
+            <div class="form-row label-row">
+                <label for="username">Username</label>
+                <label for="email">Email</label>
+                <label for="role">Role</label>
+            </div>
+            <div class="form-row input-row">
+                <input type="text" id="username" name="username" required>
+                <input type="email" id="email" name="email" required>
+                <select id="role" name="role" required>
+                    <option value="Faculty">Faculty</option>
+                    <option value="Student">Student</option>
+                    <option value="Admin">New Admin</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-row label-row">
+                <label for="password">Password</label>
+                <label for="confirm_password" style="align-content:normal;">Confirm Password</label>
+                <label></label>
+            </div>
+            <div class="form-row pass-row">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+                <button type="submit" class="create-btn">Create User</button>
+            </div>
+        </form>
+        <div style="height: 40px;"></div>
+        <h2>Existing Users</h2>
+        <table class="user-table">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="user-list">
+                <tr>
+                    <td>Sir</td>
+                    <td>F_ID</td>
+                    <td>Faculty</td>
+                    <td>
+                        <button type="button" class="action-btn">Edit</button>
+                        <button type="button" class="action-btn delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nxx</td>
+                    <td>S_ID</td>
+                    <td>Student</td>
+                    <td>
+                        <button type="button" class="action-btn">Edit</button>
+                        <button type="button" class="action-btn delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>admin_user</td>
+                    <td>lol</td>
+                    <td>Admin</td>
+                    <td>
+                        <button type="button" class="action-btn">Edit</button>
+                        <button type="button" class="action-btn delete-btn">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
