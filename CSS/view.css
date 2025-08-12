@@ -1,0 +1,106 @@
+@import url('result.css');
+
+/* Table and container formatting for faculty view pages */
+
+.container {
+    max-width: 1200px;
+    margin: 48px auto;
+    padding: 48px 40px 40px 40px;
+    background-color: rgba(255, 255, 255, 0.18);
+    border: 3px solid #F39F5A;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+}
+
+.main-heading {
+    text-align: center;
+    margin-bottom: 36px;
+    color: #fff3e0;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.table-heading {
+    text-align: center;
+    margin: 32px 0 18px 0;
+    color: #ffe0b2;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.13);
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 1.15rem;
+    margin-bottom: 32px;
+}
+
+.result-table th, .result-table td {
+    padding: 18px 18px;
+    text-align: center;
+    border-bottom: 1.5px solid #F39F5A;
+}
+
+.result-table th {
+    background-color: rgba(255, 255, 255, 0.18);
+    color: #fff3e0;
+    font-weight: 700;
+    font-size: 1.18rem;
+    letter-spacing: 1px;
+}
+
+.result-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+.result-table tr:hover {
+    background-color: rgba(243, 159, 90, 0.13);
+}
+
+@media (max-width: 900px) {
+    .container {
+        padding: 16px 2vw;
+    }
+    .main-heading {
+        font-size: 2rem;
+    }
+    .table-heading {
+        font-size: 1.2rem;
+    }
+    .result-table th, .result-table td {
+        padding: 10px 6px;
+        font-size: 1em;
+    }
+}
+
+.list-style {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.list-style li {
+    padding: 10px 18px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+a {
+    color: #eae4d3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blanchedalmond;
+    text-decoration: underline;
+}

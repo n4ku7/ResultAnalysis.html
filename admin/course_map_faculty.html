@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Mapped with Students</title>
+    <title>Course Mapped with Faculty</title>
+    <link rel="stylesheet" href="/CSS/Mgmt.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Course Mapped with Faculty</h1>
+        <form>
+            <div class="form-row label-row">
+                <label for="course">Course</label>
+                <label for="faculty">Faculty</label>
+                <label for="semester">Semester</label>
+            </div>
+            <div class="form-row input-row">
+                <input type="text" id="course" name="course" placeholder="Course Code/Name" required>
+                <input type="text" id="faculty" name="faculty" placeholder="Faculty ID/Name" required>
+                <input type="text" id="semester" name="semester" placeholder="Semester" required>
+            </div>
+            <div class="form-row pass-row">
+                <button type="submit" class="create-btn">Map Faculty to Course</button>
+            </div>
+        </form>
+        <div style="height: 40px;"></div>
+        <h2>Mapped Faculty</h2>
+        <table class="user-table main-table">
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Faculty Name</th>
+                    <th>Faculty ID</th>
+                    <th>Semester</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CS101</td>
+                    <td>Dr. A. Kumar</td>
+                    <td>FAC123</td>
+                    <td>2</td>
+                    <td>
+                        <button type="button" class="action-btn">Edit</button>
+                        <button type="button" class="action-btn delete-btn">Remove</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>MA201</td>
+                    <td>Prof. S. Rao</td>
+                    <td>FAC456</td>
+                    <td>3</td>
+                    <td>
+                        <button type="button" class="action-btn">Edit</button>
+                        <button type="button" class="action-btn delete-btn">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <table text-align="left" class="list-style">
+        <tr>
+            <td>
+                <ul class="list-style">
+                    <li>
+                        <a href="/admin/admin_index.html">Back</a>
+                    </li>
+                    <li>
+                        <a href="/index.html">Logout</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

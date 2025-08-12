@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Report</title>
+    <title>Report Dashboard</title>
+    <link rel="stylesheet" href="/CSS/result.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1 class="main-heading">Report Dashboard</h1>
+        <ul class="action-list">
+            <li>
+                <a href="#" class="action-btn">Generate Report</a>
+            </li>
+            <li>
+                <a href="#" class="action-btn">Download Report</a>
+            </li>
+        </ul>
+        <h2 class="table-heading">Recent Reports</h2>
+        <table class="result-table">
+            <thead>
+                <tr>
+                    <th>Report ID</th>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>RPT001</td>
+                    <td>Semester 1 Results</td>
+                    <td>2025-08-10</td>
+                    <td>Completed</td>
+                    <td>
+                        <button class="action-btn">View</button>
+                        <button class="action-btn delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>RPT002</td>
+                    <td>Attendance Report</td>
+                    <td>2025-08-05</td>
+                    <td>Pending</td>
+                    <td>
+                        <button class="action-btn">View</button>
+                        <button class="action-btn delete-btn">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <table text-align="left" class="list-style">
+        <tr>
+            <td>
+                <ul class="list-style">
+                    <li>
+                        <a href="/admin/admin_index.html">Back</a>
+                    </li>
+                    <li>
+                        <a href="/index.html">Logout</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

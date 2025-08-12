@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/result.css">
     <title>Add Result</title>
 </head>
 <body>
-    <h1 align="center" style="border:2px solid;">Add Student Results</h1>
-    <center>
+    <div class="container">
+        <h1 class="main-heading">Add Student Results</h1>
         <form action="add_result_action.html" method="post">
-            <table border="1" align="center" style="width: 50%; text-align: center; border:2px solid;">
+            <table class="result-table">
                 <tr>
                     <th>Student ID</th>
                     <td><input type="text" name="student_id" required></td>
@@ -28,7 +29,18 @@
                 </tr>
             </table>
             <br>
-            <input type="submit" value="Add Result">
+            <div style="text-align: center;">
+            <button type="submit" class="create-btn">Add Result</button>
+            </div>
         </form>
+    </div>
+    <ul class="list-style">
+        <li>
+            <a href="/admin/admin_index.html">Back</a>
+        </li>
+        <li>
+            <a href="/index.html">Logout</a>
+        </li>
+    </ul>
 </body>
 </html>

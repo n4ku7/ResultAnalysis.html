@@ -4,8 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post Marks</title>
+    <link rel="stylesheet" href="/CSS/result.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1 class="main-heading">Post Marks</h1>
+        <form>
+            <div class="form-row label-row">
+                <label for="student_id">Student ID</label>
+                <label for="student_name">Student Name</label>
+                <label for="course_name">Course Name</label>
+            </div>
+            <div class="form-row input-row">
+                <input type="text" id="student_id" name="student_id" required>
+                <input type="text" id="student_name" name="student_name" required>
+                <input type="text" id="course_name" name="course_name" required>
+            </div>
+            <div class="form-row label-row">
+                <label for="marks_obtained">Marks Obtained</label>
+                <label for="total_marks">Total Marks</label>
+                <label></label>
+            </div>
+            <div class="form-row pass-row">
+                <input type="number" id="marks_obtained" name="marks_obtained" placeholder="Marks Obtained" min="0" required>
+                <input type="number" id="total_marks" name="total_marks" placeholder="Total Marks" min="1" required>
+                <button type="submit" class="create-btn">Post Marks</button>
+            </div>
+        </form>
+        <div style="height: 40px;"></div>
+        <h2 class="table-heading">Recently Posted Marks</h2>
+        <table class="result-table">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Student Name</th>
+                    <th>Course Name</th>
+                    <th>Marks Obtained</th>
+                    <th>Total Marks</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>30549</td>
+                    <td>Nakul Ojha</td>
+                    <td>Computer Science</td>
+                    <td>85</td>
+                    <td>100</td>
+                    <td>
+                        <button class="action-btn">Edit</button>
+                        <button class="action-btn delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>32519</td>
+                    <td>Momo</td>
+                    <td>Mathematics</td>
+                    <td>90</td>
+                    <td>100</td>
+                    <td>
+                        <button class="action-btn">Edit</button>
+                        <button class="action-btn delete-btn">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <table text-align="left" class="list-style">
+                <tr>
+                    <td>
+                        <ul class="list-style">
+                            <li>
+                                <a href="faculty_index.html">Back</a>
+                            </li>
+                            <li>
+                                <a href="/index.html">Logout</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+        </table>
 </body>
 </html>

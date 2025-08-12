@@ -105,3 +105,21 @@ table[border] th {
     justify-content: center;
     margin-top: 15px;
 }
+
+.list-style li {
+    padding: 10px 18px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+a {
+    color: #eae4d3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blanchedalmond;
+    text-decoration: underline;
+}

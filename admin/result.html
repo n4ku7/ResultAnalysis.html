@@ -3,51 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Result</title>
+    <title>Result Dashboard</title>
+    <link rel="stylesheet" href="/CSS/result.css">
 </head>
 <body>
-    <h1 align="center" style="border:2px solid;">Result Dashboard</h1>
-    <ul>
-        <li>
-            <a href="update_result.html">Add Student Result</a>
-        </li>
-        <li>
-            <a href="update_result.html">Update Student Result</a>
-        </li>
-        <li>
-            <a href="update_result.html">Delete Student Result</a>
-        </li>
-        <li>
-            Post Result announcements
-        </li>
-    </ul>
-    <table border="1" align="center" style="width: 100%; text-align: center; border:2px solid;">
+    <div class="container">
+        <h1 class="main-heading">Result Dashboard</h1>
+        <ul class="action-list">
+            <li>
+                <a href="update_result.html" class="action-btn">Add Student Result</a>
+            </li>
+            <li>
+                <a href="update_result.html" class="action-btn">Update Student Result</a>
+            </li>
+            <li>
+                <a href="update_result.html" class="action-btn delete-btn">Delete Student Result</a>
+            </li>
+            <li>
+                <span class="action-btn announce-btn">Post Result Announcements</span>
+            </li>
+        </ul>
+        <h2 class="table-heading">Student Results</h2>
+        <table class="result-table">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Student Name</th>
+                    <th>Course Name</th>
+                    <th>Marks Obtained</th>
+                    <th>Total Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>30549</td>
+                    <td>Nakul Ojha</td>
+                    <td>Computer Science</td>
+                    <td>85</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>32519</td>
+                    <td>Momo</td>
+                    <td>Mathematics</td>
+                    <td>90</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>33009</td>
+                    <td>Baniya</td>
+                    <td>Physics</td>
+                    <td>78</td>
+                    <td>100</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <table text-align="left" class="list-style">
         <tr>
-            <th>Student ID</th>
-            <th>Student Name</th>
-            <th>Course Name</th>
-            <th>Marks Obtained</th>
-            <th>Total Marks</th>
+            <td>
+                <ul class="list-style">
+                    <li>
+                        <a href="/admin/admin_index.html">Back</a>
+                    </li>
+                    <li>
+                        <a href="/index.html">Logout</a>
+                    </li>
+                </ul>
+            </td>
         </tr>
-        <tr>
-            <td>30549</td>
-            <td>Nakul Ojha</td>
-            <td>Computer Science</td>
-            <td>85</td>
-            <td>100</td>
-        </tr>
-        <tr>
-            <td>32519</td>
-            <td>Momo</td>
-            <td>Mathematics</td>
-            <td>90</td>
-            <td>100</td>
-        </tr>
-        <tr>
-            <td>33009</td>
-            <td>Baniya</td>
-            <td>Physics</td>
-            <td>78</td>
-            <td>100</td>
+    </table>
 </body>
 </html>
